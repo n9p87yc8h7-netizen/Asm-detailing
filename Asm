@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASM Car Detailing Premium</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #0b0b0b;
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      top: 0;
+      left: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      font-weight: 800;
+    }
+
+    .hero p {
+      color: #ccc;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 14px 22px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* SECTION */
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #161616;
+      padding: 25px;
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    }
+
+    .price {
+      color: #25D366;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* MAP */
+    .map {
+      width: 90%;
+      max-width: 800px;
+      height: 350px;
+      margin: auto;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    /* FLOAT BUTTON */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      padding: 15px 18px;
+      border-radius: 50px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      z-index: 999;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>ASM Car Detailing</h1>
+    <p>Premium Autoaufbereitung – Glanz wie im Showroom</p>
+    <a class="btn" href="https://wa.me/4917662566933?text=Ich%20m%C3%B6chte%20einen%20Termin%20buchen">Jetzt Termin sichern</a>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="section">
+  <h2>Unsere Leistungen</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Innenaufbereitung</h3>
+      <p>Tiefenreinigung von Sitzen & Innenraum</p>
+      <div class="price">ab 49€</div>
+    </div>
+
+    <div class="card">
+      <h3>Außenpflege</h3>
+      <p>Handwäsche + Lackpolitur + Schutz</p>
+      <div class="price">ab 59€</div>
+    </div>
+
+    <div class="card">
+      <h3>Premium Paket</h3>
+      <p>Innen + Außen Komplettservice</p>
+      <div class="price">ab 99€</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- GOOGLE MAPS -->
+<div class="section">
+  <h2>Unser Standort</h2>
+
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18..."
+      width="100%" height="100%" style="border:0;"
+      allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+  <h2>Termin buchen</h2>
+  <p>Schreib uns direkt auf WhatsApp</p>
+  <a class="btn" href="https://wa.me/4917662566933?text=Hallo%20ich%20m%C3%B6chte%20einen%20Termin">WhatsApp öffnen</a>
+</div>
+
+<!-- WHATSAPP -->
+<a class="whatsapp"
+   href="https://wa.me/4917662566933?text=Hallo%20ich%20interessiere%20mich%20f%C3%BCr%20Car%20Detailing"
+   target="_blank">
+💬 WhatsApp
+</a>
+
+<footer>
+  © 2026 ASM Car Detailing – Premium Car Care
+</footer>
+
+</body>
+</html>
